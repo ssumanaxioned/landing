@@ -581,3 +581,36 @@ footer .wrapper {
   align-items: center;
   text-align: center;
 }
+
+footer .wrapper p { margin-bottom: 20px; }
+footer .wrapper a { color: #3887ed; }
+
+.icon-ctn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.social {
+  text-indent: -9999px;
+  display: block;
+  position: relative;
+}
+.social::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 32px;
+  position:absolute;
+  left: 0;
+  z-index: 9999;
+  text-indent: 0;
+}
+
+.social:hover::before { color: lightgray; }
+.facebook::before { content: "\f39e"; }
+.twitter::before { content: "\f099"; }
+.linkedin::before { content: "\f0e1"; }
+.apple::before { content: "\f179"; }
