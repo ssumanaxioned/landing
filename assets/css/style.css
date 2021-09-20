@@ -570,7 +570,8 @@ header .wrapper {
 }
 
 .sub-form button:hover {
-  border: 5px solid #3887ed;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2),
+             -6px -6px 15px rgba(0, 0, 0, 0.2);
 }
 
 footer .wrapper {
