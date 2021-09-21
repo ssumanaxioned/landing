@@ -480,10 +480,10 @@ header .wrapper {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 
 .content {
-  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -615,3 +615,74 @@ footer .wrapper a { color: #3887ed; }
 .twitter::before { content: "\f099"; }
 .linkedin::before { content: "\f0e1"; }
 .apple::before { content: "\f179"; }
+
+@media (max-width: 1280px) {
+  .feature-content {
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-content li { flex-basis: 45%; }
+}
+
+@media (max-width: 768px ) {
+
+  * { line-height: 24px; }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  header .wrapper {
+    padding: 0 20px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-img { margin-top: 30px;}
+
+  .simple {
+    padding: 0 20px;
+    padding-top: 300px;
+  }
+
+  .pixel, .design {
+    padding: 0 20px;
+    padding-top: 100px;
+  }
+
+  .review .wrapper { padding: 100px 20px; }
+  .feature .wrapper { padding: 100px 20px; }
+  .subscribe .wrapper { padding: 100px 20px; }
+
+  .sub-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .sub-form input {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .sub-form button {
+    width: 80%;
+  }
+
+  .icon-ctn {
+    gap: 100px;
+  }
+}
